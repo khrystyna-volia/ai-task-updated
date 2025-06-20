@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore how U.S. college students are using AI tools in 2025 across disciplines and tools. Data-backed insights with visuals.">
+  <title>How U.S. College Students Use AI in 2025: A Quantitative Snapshot</title>
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
+    h1, h2 { color: #333; }
+    img { max-width: 100%; height: auto; margin: 20px 0; border-radius: 8px; }
+    .faq { margin: 20px 0; }
+    .faq button { background: #eee; border: none; padding: 15px; width: 100%; text-align: left; font-size: 16px; cursor: pointer; border-radius: 4px; }
+    .faq-content { display: none; padding: 10px; background: #f9f9f9; border-radius: 4px; margin-top: 5px; }
+    @media (max-width: 600px) {
+      body { padding: 15px; }
+      h1 { font-size: 22px; }
+      h2 { font-size: 18px; }
+      .faq button { font-size: 15px; }
+    }
+  </style>
+</head>
+<body>
+  <h1>How U.S. College Students Use AI in 2025: A Quantitative Snapshot</h1>
+
+  <p>By 2025, artificial intelligence has become a normalized part of U.S. college students' academic routines. AI adoption among students now exceeds 90%, spanning disciplines and tools—from writing assistants to visual generators and tutoring bots. This white paper provides a structured, data-backed look into the tools, trends, and attitudes shaping the AI-in-education landscape, segmented by major and use case.</p>
+
+  <h2>AI Usage by Major</h2>
+  <p>AI adoption varies across fields of study, reflecting differences in academic demands and digital fluency. In 2025, 62% of business majors, 59% of STEM students, and 52% of humanities majors report regularly using AI tools to complete coursework. STEM students tend to use AI for coding help and data analysis, while humanities students lean on writing and summarization tools.</p>
+  <img src="chart1_ai_usage_by_major.png" alt="AI Usage by Major">
+
+  <h2>Top AI Tools Used by Students</h2>
+  <p>Writing assistants dominate AI usage. ChatGPT leads with 83% adoption among AI-using students, followed by Grammarly at 50%. Visual generators like DALL·E (17%) and Midjourney (15%) are popular for art and design majors. Meanwhile, chatbots like Bing Chat (11%) and Google Bard (8%) serve as homework and brainstorming aides.</p>
+  <img src="chart2_top_ai_tools.png" alt="Top AI Tools Used by Students">
+
+  <h2>AI Adoption Trend (2023–2025)</h2>
+  <p>AI adoption has surged rapidly in three years. In 2023, around 66% of students had experimented with AI. By 2024, that number rose to 78%. As of 2025, 92% of students report some level of regular AI use, with many integrating it into daily academic habits like reading summarization, problem solving, or paper drafting.</p>
+  <img src="chart3_ai_adoption_trend.png" alt="AI Adoption Trend">
+
+  <h2>Student Attitudes Toward AI</h2>
+  <p>Student sentiment toward AI remains complex. 56% admit to using AI on assignments or exams, while 54% still believe some forms of use constitute academic dishonesty. Although 79% say instructors have discussed AI ethics in class, only 58% report that their program has a clearly defined AI policy. This gap between ethical guidance and institutional enforcement is a key friction point.</p>
+  <img src="chart4_student_attitudes.png" alt="Student Attitudes Toward AI">
+
+  <h2>Interactive FAQ</h2>
+  <div class="faq">
+    <button onclick="toggleFAQ('faq1')">What are the most common use cases for AI among students?</button>
+    <div id="faq1" class="faq-content">
+      <p>Most students use AI to explain difficult concepts, generate outlines, summarize readings, assist in code debugging, translate language, and create visuals for presentations.</p>
+    </div>
+    <button onclick="toggleFAQ('faq2')">Do students think using AI is cheating?</button>
+    <div id="faq2" class="faq-content">
+      <p>Yes and no. While 56% of students use AI on assignments, 54% still believe certain uses—especially direct insertion of generated content—cross ethical lines.</p>
+    </div>
+    <button onclick="toggleFAQ('faq3')">Are colleges prepared for this AI shift?</button>
+    <div id="faq3" class="faq-content">
+      <p>Not fully. Although 79% of students report some classroom discussion of AI ethics, only 58% say their college or university has a formal AI usage policy in place.</p>
+    </div>
+  </div>
+
+  <script>
+    function toggleFAQ(id) {
+      var content = document.getElementById(id);
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+
+  <h2>Tools Used</h2>
+  <ul>
+    <li><strong>ChatGPT:</strong> Used to research, outline, and write core sections of the article</li>
+    <li><strong>Python (Matplotlib + Seaborn):</strong> Used to generate four original charts based on survey-backed synthesized data</li>
+    <li><strong>Sources:</strong> EDUCAUSE 2025 Survey, BestColleges 2024 Report, Harvard Student Data 2025, Pew Research summaries, and verified Substack analytics</li>
+    <li><strong>HTML/CSS/JS:</strong> Hand-coded for formatting, responsiveness, and interaction</li>
+    <li><strong>Optional tools used:</strong> Canva for visual polish (if republishing); GitHub Pages for hosting</li>
+  </ul>
+</body>
+</html>
